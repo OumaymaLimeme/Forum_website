@@ -1,2 +1,2 @@
 # Forum_website
-Website for the forum of National Engineering School og Carthage Enicarthage
+Website for the forum of National Engineering School of Carthage Enicarthage
