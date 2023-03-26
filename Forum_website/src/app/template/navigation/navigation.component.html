@@ -1,0 +1,139 @@
+<ul class="navbar-nav  bg-dark text-white sidebar sidebar-dark  accordion" id="accordionSidebar">
+
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" >
+      <div class="sidebar-brand-icon rotate-n-15">
+
+      </div>
+      <div class="sidebar-brand-text mx-3"><img src="assets/img/logo.png" width="80" height="60"></div>
+  </a>
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
+
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item ">
+      <a routerLinkActive="active" class="nav-link" routerLink="/dashboard">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Tableau de bord</span></a>
+  </li>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+  <!-- Heading -->
+
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <i class="fa-solid fa-building-user"></i>
+          <span>Les Entreprises </span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+              <a routerLinkActive="active" class="collapse-item" routerLink="/add-entrep">Ajouter une Entreprise</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/del-entrep">Supprimer Entreprise</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/update-entrep">Modifier Entreprise</a>
+
+          </div>
+      </div>
+  </li>
+
+
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
+          aria-controls="collapse3">
+          <i class="fa-solid fa-users"></i>
+          <span>Les Sponsors </span>
+      </a>
+      <div id="collapse3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+              <a routerLinkActive="active" class="collapse-item" routerLink="/add-sponsor">Ajouter un Sponsor</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/del-sponsor">Supprimer  un Sponsor</a>
+                <a routerLinkActive="active" class="collapse-item" routerLink="/update-sponsor">Modifier un Sponsor</a>
+
+          </div>
+      </div>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse22" aria-expanded="true"
+          aria-controls="collapse22">
+          <i class="fa-solid fa-user-group"></i>
+          <span>Les Invités</span>
+      </a>
+      <div id="collapse22" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+              <a routerLinkActive="active" class="collapse-item" routerLink="/add-invite">Ajouter  Invité</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/del-invite">Supprimer  Invité</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/update-invite">Modifier Invité</a>
+           </div>
+      </div>
+  </li>
+  <hr class="sidebar-divider">
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse5" aria-expanded="true"
+          aria-controls="collapse5">
+          <i class="fas fa-fw fa-x-ray"></i>
+          <span>Les stands </span>
+      </a>
+      <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+              <a routerLinkActive="active" class="collapse-item" routerLink="/add-stand">Ajouter un stands</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/del-stand">Supprimer un stands</a>
+          </div>
+      </div>
+  </li>
+
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse6" aria-expanded="true"
+          aria-controls="collapse6">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <span> Les besoins matériels</span>
+      </a>
+      <div id="collapse6" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+
+              <a routerLinkActive="active" class="collapse-item" routerLink="/addprescription">Ajouter Un besoin matériel</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/prescription">Modifier Un besoin matériel</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/prescription">Listes du besoins matériels</a>
+          </div>
+      </div>
+  </li>
+
+
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse9" aria-expanded="true"
+          aria-controls="collapse9">
+          <i class="fas fa-fw fa-file-medical-alt"></i>
+          <span>Facture</span>
+      </a>
+      <div id="collapse9" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+              <a routerLinkActive="active" class="collapse-item" routerLink="/addservice">Imprimer la Facture </a>
+          </div>
+      </div>
+  </li>
+     <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse13" aria-expanded="true"
+          aria-controls="collapse13">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Configurations</span>
+      </a>
+      <div id="collapse13" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+              <a routerLinkActive="active" class="collapse-item" routerLink="/system-config">Système</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/email-config">Email</a>
+              <a routerLinkActive="active" class="collapse-item" routerLink="/password-config">Password</a>
+          </div>
+      </div>
+  </li>
+
+
+
+
+
+</ul>
