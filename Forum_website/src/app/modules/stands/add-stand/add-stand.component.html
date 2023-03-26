@@ -1,1 +1,150 @@
-<p>add-stand works!</p>
+<div class="card">
+  <div class="card-header">
+      <strong class="card-title">Ajouter Stand</strong>
+  </div>
+  <div class="card-body">
+      <form class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
+          <div class="form-group row">
+              <label for="firstname" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Nom de L'entreprise </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <input name="firstname" type="text" class="form-control" id="firstname"
+
+                      placeholder="Nom de L'entreprise" value="">
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="lastname" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Nom de Propriétaire </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <input name="lastname" type="text" class="form-control" id="lastname"
+
+                      placeholder="Nom de Propriétaire " value="">
+
+              </div>
+          </div>
+
+          <!-- display in edit mode -->
+          <div class="form-group row">
+              <label for="email" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Adresse e-mail </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <input name="email" class="form-control" type="email" placeholder="Adresse e-mail"
+                                     value="">
+
+              </div>
+          </div>
+         <div class="form-group row">
+              <label for="phone" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Téléphone</font>
+                  </font>
+              </label>
+              <div class="col-md-6">
+                  <input name="phone" class="form-control" type="number" placeholder="Pas de téléphone"
+                      value="">
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label class="col-md-3">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Emplacement   </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <div class="form-check">
+                      <label class="radio-inline">
+                          <input formControlName="sex" type="radio" name="sex" value="Male"
+                              checked="&quot;checked&quot;">
+                          <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">En amont </font>
+                          </font>
+                      </label>  &nbsp;
+                      <label class="radio-inline">
+                          <input formControlName="sex" type="radio" name="sex" value="Female">
+                          <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Au centre </font>
+                          </font>
+                      </label> &nbsp;
+                      <label class="radio-inline">
+                        <input formControlName="sex" type="radio" name="sex" value="Female">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">En aval</font>
+                        </font>
+                    </label>
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="blood_group" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Type de Package</font>
+                  </font>
+              </label>
+              <div class="col-md-6">
+                  <select name="blood_group" class="form-control select2-hidden-accessible" id="blood_group"
+                      tabindex="-1" aria-hidden="true">
+
+                      <option value="A+">
+                          <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Gold</font>
+                          </font>
+                      </option>
+                      <option value="B+">
+                          <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Silver</font>
+                          </font>
+                      </option>
+                      <option value="B-">
+                          <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Bronze</font>
+                          </font>
+                      </option>
+                  </select>
+              </div>
+          </div>
+          <button type="reset" class="button-43">
+              <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Réinitialiser</font>
+              </font>
+          </button>
+          &nbsp;
+          <button class="button-40">
+              <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Sauvegarder</font>
+              </font>
+          </button>
+
+      </form>
+
+
+  </div>
+</div>

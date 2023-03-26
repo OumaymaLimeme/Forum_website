@@ -12,9 +12,9 @@ import { DelSponsorComponent } from './modules/sponsor/del-sponsor/del-sponsor.c
 import { UpdateSponsorComponent } from './modules/sponsor/update-sponsor/update-sponsor.component';
 import { AddStandComponent } from './modules/stands/add-stand/add-stand.component';
 import { DelStandComponent } from './modules/stands/del-stand/del-stand.component';
+import { DashboardComponent } from './template/dashboard/dashboard.component';
 
 const routes: Routes = [
-   {path:'login',component:LoginComponent},
    {path:'del-invite',component:DelInviteComponent},
    {path:'add-invite',component:AddInviteComponent},
    {path:'update-invite',component:UpdateInviteComponent},
@@ -26,8 +26,8 @@ const routes: Routes = [
    {path:'update-entrep',component:UpdateEntrepComponent},
    {path:'add-stand',component:AddStandComponent},
    {path:'del-stand',component:DelStandComponent},
-
-
+   {path:'dashboard',component:DashboardComponent},
+   {path:'login',component:LoginComponent}
 ];
 
 @NgModule({

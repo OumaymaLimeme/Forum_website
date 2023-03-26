@@ -18,6 +18,7 @@ import { AddEntrepComponent } from './modules/entreprise/add-entrep/add-entrep.c
 import { UpdateEntrepComponent } from './modules/entreprise/update-entrep/update-entrep.component';
 import { AddStandComponent } from './modules/stands/add-stand/add-stand.component';
 import { DelStandComponent } from './modules/stands/del-stand/del-stand.component';
+import { DashboardComponent } from './template/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DelStandComponent } from './modules/stands/del-stand/del-stand.componen
     UpdateEntrepComponent,
     AddStandComponent,
     DelStandComponent,
+    DashboardComponent,
     ],
   imports: [
     BrowserModule,
