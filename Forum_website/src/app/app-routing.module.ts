@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { AddEntrepComponent } from './modules/entreprise/add-entrep/add-entrep.component';
 import { DelEntrepComponent } from './modules/entreprise/del-entrep/del-entrep.component';
@@ -12,7 +13,6 @@ import { DelSponsorComponent } from './modules/sponsor/del-sponsor/del-sponsor.c
 import { UpdateSponsorComponent } from './modules/sponsor/update-sponsor/update-sponsor.component';
 import { AddStandComponent } from './modules/stands/add-stand/add-stand.component';
 import { DelStandComponent } from './modules/stands/del-stand/del-stand.component';
-import { DashboardComponent } from './template/dashboard/dashboard.component';
 
 const routes: Routes = [
    {path:'del-invite',component:DelInviteComponent},
@@ -26,8 +26,8 @@ const routes: Routes = [
    {path:'update-entrep',component:UpdateEntrepComponent},
    {path:'add-stand',component:AddStandComponent},
    {path:'del-stand',component:DelStandComponent},
-   {path:'dashboard',component:DashboardComponent},
-   {path:'login',component:LoginComponent}
+   {path:'login',component:LoginComponent},
+   { path: 'dashboard', component:DashboardComponent },
 ];
 
 @NgModule({
