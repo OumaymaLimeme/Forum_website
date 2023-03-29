@@ -1,5 +1,5 @@
 
-<!-- Scroll to Top Button-->
+<!-- Scroll to Top Button     (click)="loginUser()"          -->
 <a class="scroll-to-top rounded" href="#page-top"></a>
 <i class="fas fa-angle-up"></i>
 <div >
@@ -24,7 +24,7 @@
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Email" type="text">
+                          <input class="form-control" placeholder="Email" type="text"  name="usermail">
                       </div>
                   </div>
                   <div class="form-group">
@@ -32,12 +32,12 @@
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-lock"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Password" type="password"    >
+                          <input class="form-control" placeholder="Password" type="password" name="password">
                       </div>
                   </div>
 
                   <div class="text-center">
-                      <button routerLink="/dashboard" type="submit"
+                      <button  type="submit"
                           class="button-62">Connexion</button>
                   </div>
                 </form>

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { UpdateEntrepComponent } from './modules/entreprise/update-entrep/update
 import { AddStandComponent } from './modules/stands/add-stand/add-stand.component';
 import { DelStandComponent } from './modules/stands/del-stand/del-stand.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,11 +40,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     UpdateEntrepComponent,
     AddStandComponent,
     DelStandComponent,
-    DashboardComponent
-    ],
+    DashboardComponent,
+    HomeComponent
+        ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
