@@ -28,8 +28,8 @@ const routes: Routes = [
    {path:'add-stand',component:AddStandComponent},
    {path:'del-stand',component:DelStandComponent},
    {path:'login',component:LoginComponent},
-   {path: 'dashboard', component:DashboardComponent },
-   {path :'',component:HomeComponent}
+   {path:'dashboard', component:DashboardComponent },
+   {path :'home',component:HomeComponent}
 ];
 
 @NgModule({
