@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserserviceService } from '../userservice.service';
 
@@ -8,5 +8,23 @@ import { UserserviceService } from '../userservice.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  email: string ="";
+  password: string ="";
 
+  getData ?:boolean;
+  constructor(private userservice: UserserviceService,private router: Router) {}
+
+
+  login() {
+    var email=this.email;
+    var password=this.password;
+    this.userservice.getUserData(email,password).subscribe( (resultData: any) => {
+      this.getData=resultData;
+      if(this.getData==true){
+            this.router.navigateByUrl('/dashboard');
+       }
+      else {alert("Invalide users");}
+
+    });
+  }
 }

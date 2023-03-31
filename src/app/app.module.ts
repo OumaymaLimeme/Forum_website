@@ -21,6 +21,7 @@ import { AddStandComponent } from './modules/stands/add-stand/add-stand.componen
 import { DelStandComponent } from './modules/stands/del-stand/del-stand.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +48,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

@@ -9,7 +9,7 @@ export class UserserviceService {
   constructor(private http:HttpClient) { }
 
 
-  getUserData(password: string,usermail: string){
-    return this.http.get('http://localhost:8090/user/'+password+'/'+usermail);
+  getUserData(password: string,email: string){
+    return this.http.get('http://localhost:8091/user/'+password+'/'+email);
   }
 }

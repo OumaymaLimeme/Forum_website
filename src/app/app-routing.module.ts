@@ -29,7 +29,9 @@ const routes: Routes = [
    {path:'del-stand',component:DelStandComponent},
    {path:'login',component:LoginComponent},
    {path:'dashboard', component:DashboardComponent },
-   {path :'home',component:HomeComponent}
+   {path :'home',component:HomeComponent},
+   {path :'',component:HomeComponent}
+
 ];
 
 @NgModule({

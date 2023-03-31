@@ -19,7 +19,7 @@
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Email" type="text"  name="usermail">
+                          <input class="form-control"    [(ngModel)]="email" [ngModelOptions]="{standalone: true}"  placeholder="Email" type="text"  name="email">
                       </div>
                   </div>
                   <div class="form-group">
@@ -27,12 +27,12 @@
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-lock"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Password" type="password" name="password">
+                          <input class="form-control"  [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="Password" type="password" name="password">
                       </div>
                   </div>
 
                   <div class="text-center">
-                      <button  type="submit"
+                      <button  type="submit" (click)="login()"
                           class="button-62">Connexion</button>
                   </div>
                 </form>
