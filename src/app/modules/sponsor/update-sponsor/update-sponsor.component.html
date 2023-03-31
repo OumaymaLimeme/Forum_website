@@ -1,0 +1,151 @@
+<div class="row h-100 justify-content-center align-items-center mt-3">
+  <div class="col-auto">
+<div class="card text-center" style="width: 40rem;">
+
+  <div class="card-header">
+
+      <strong class="card-title">Modifier Sponsor</strong>
+  </div>
+  <div class="card-body">
+      <form class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
+          <div class="form-group row">
+              <label for="firstname" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Nom Sponsor </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <input name="firstname" type="text" class="form-control" id="firstname"
+               formControlName="firstname"
+                      placeholder="Nom Entreprise" value="">
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="lastname" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Spécialité</font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <input name="lastname" type="text" class="form-control" id="lastname"
+                     formControlName="lastname"
+                      placeholder="Spécialité" value="">
+              </div>
+          </div>
+
+          <!-- display in edit mode -->
+          <div class="form-group row">
+              <label for="email" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Adresse e-mail </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <input name="email" class="form-control" type="email" placeholder="Adresse e-mail"
+                      formControlName="email" id="email"
+                      value="">
+              </div>
+          </div>
+          <!-- ends of display edit mode-->
+          <div class="form-group row">
+              <label for="address" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Adresse </font>
+                  </font><i class="text-danger">
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">*</font>
+                      </font>
+                  </i>
+              </label>
+              <div class="col-md-6">
+                  <textarea name="address" class="form-control" placeholder="Adresse"
+                     formControlName="address"
+                      maxlength="140" rows="1" id="address"></textarea>
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="phone" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Téléphone</font>
+                  </font>
+              </label>
+              <div class="col-md-6">
+                  <input name="phone" class="form-control" type="number" placeholder="Téléphone"
+                      formControlName="phone" id="phone"
+                      value="">
+              </div>
+          </div>
+
+          <div class="form-group row">
+              <label for="specialist" class="col-md-3 col-form-label">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Budget</font>
+                  </font>
+              </label>
+              <div class="col-md-6">
+                  <input type="text" name="specialist" class="form-control" placeholder="Budget"
+                   formControlName="specialist"
+                      id="specialist" value="">
+              </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="blood_group" class="col-md-3 col-form-label">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Type de Package</font>
+                </font>
+            </label>
+            <div class="col-md-6">
+                <select name="blood_group" class="form-control select2-hidden-accessible" id="type-pack"
+                formControlName="blood_group"
+                    tabindex="-1" aria-hidden="true">
+
+                    <option value="Gold">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Gold</font>
+                        </font>
+                    </option>
+                    <option value="Silver">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Silver</font>
+                        </font>
+                    </option>
+                    <option value="Bronze">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Bronze</font>
+                        </font>
+                    </option>
+
+
+                </select>
+            </div>
+        </div>
+
+
+          <button class="btn btn-success">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Sauvegarder</font>
+            </font>
+        </button>
+      </form>
+
+
+  </div>
+</div>
+  </div>
+</div>
+<app-footer></app-footer>
