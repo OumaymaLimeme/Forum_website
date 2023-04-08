@@ -3,7 +3,6 @@ export interface Entreprise{
   nom:  string;
   specialite: string;
   email: string;
-  localisation: string;
   adresse : string;
   telephone : string;
   budget : number;

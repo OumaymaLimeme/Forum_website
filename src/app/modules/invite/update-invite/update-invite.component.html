@@ -7,12 +7,12 @@
       <strong class="card-title">Nouveau invité</strong>
   </div>
   <div class="card-body">
-      <form class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
+      <form [formGroup]="form" (ngSubmit)="submit()" class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
 
 
 
           <div class="form-group row">
-              <label for="firstname" class="col-md-3 col-form-label">
+              <label for="prenom" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Prénom </font>
                   </font><i class="text-danger">
@@ -22,14 +22,14 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="firstname" type="text" class="form-control" id="firstname"
+                  <input name="prenom" formControlName="prenom" type="text" class="form-control" id="prenom"
 
                       placeholder="Prénom" value="">
               </div>
           </div>
 
           <div class="form-group row">
-              <label for="lastname" class="col-md-3 col-form-label">
+              <label for="nom" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Nom de famille </font>
                   </font><i class="text-danger">
@@ -39,7 +39,7 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="lastname" type="text" class="form-control" id="lastname"
+                  <input name="nom" formControlName="nom" type="text" class="form-control" id="nom"
 
                       placeholder="Nom de famille" value="">
               </div>
@@ -57,22 +57,21 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="email" class="form-control" type="email" placeholder="Adresse e-mail"
+                  <input name="email" formControlName="email" class="form-control" type="email" placeholder="Adresse e-mail"
           id="email"
                       value="">
               </div>
             </div>
 
           <div class="form-group row">
-              <label for="phone" class="col-md-3 col-form-label">
+              <label for="telephone" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Téléphone</font>
                   </font>
               </label>
               <div class="col-md-6">
-                  <input name="phone" class="form-control" type="number" placeholder="Pas de téléphone"
-                id="phone"
-                      value="">
+                  <input name="telephone" formControlName="telephone" class="form-control" type="number" placeholder="Téléphone"
+                id="telephone">
               </div>
           </div>
           <div class="form-group row">

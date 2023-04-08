@@ -24,7 +24,6 @@ export class UpdateEntrepComponent  implements OnInit{
     nom: new FormControl('', [Validators.required]),
     specialite: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required]),
-    localisation: new FormControl('', [Validators.required]),
     adresse: new FormControl('', [Validators.required]),
     telephone: new FormControl('', [Validators.required]),
     budget: new FormControl('', [Validators.required])

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Entreprise</title>
+    <title>Home Invites</title>
 </head>
 <body>
   <div id="wrapper" >
@@ -32,39 +32,35 @@
             </nav>
     <!--Main Content-->
     <div class="mt-5">
-        <h1 class="text-center">Listes des Entreprises</h1>
+        <h1 class="text-center">Listes des Invités</h1>
         <div class="container">
             <!--Add User Button-->
             <div class="my-3">
-                <a href="/add"><button type="button" class="btn btn-primary">Add Entreprise</button></a>
+                <a href="/add-invite"><button type="button" class="btn btn-primary">Add Invité</button></a>
             </div>
             <table class="table border" >
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Nom Entreprise</th>
-                    <th scope="col">Spécialité</th>
+                    <th scope="col">Nom Invité</th>
+                    <th scope="col">Prénom de L'Invité</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Address</th>
                     <th scope="col">Telephone</th>
-                    <th scope="col">Budget</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let entreprise of entreprises" >
-                    <td>{{entreprise.entrep_id}}</td>
-                    <td>{{entreprise.nom}}</td>
-                    <td>{{entreprise.specialite}}</td>
-                    <td>{{entreprise.email}}</td>
-                    <td>{{entreprise.adresse}}</td>
-                    <td>{{entreprise.telephone}}</td>
-                    <td>{{entreprise.budget}}</td>
+                  <tr *ngFor="let invite of invites" >
+                    <td>{{invite.invite_id}}</td>
+                    <td>{{invite.prenom}}</td>
+                    <td>{{invite.nom}}</td>
+                    <td>{{invite.email}}</td>
+                    <td>{{invite.telephone}}</td>
                     <td>
                         <div class="d-inline mx-2">
-                            <button class="btn btn-warning" (click)="updateEntreprise(entreprise.entrep_id)"  type="button">Update</button>
+                            <button class="btn btn-warning" (click)="updateInvite(invite.invite_id)"  type="button">Update</button>
                         </div>
                         <div class="d-inline">
-                          <button class="btn btn-danger" (click)="deleteEntreprise(entreprise.entrep_id)" type="button">Delete</button>
+                          <button class="btn btn-danger" (click)="deleteInvite(invite.invite_id)" type="button">Delete</button>
                         </div>
                     </td>
                   </tr>

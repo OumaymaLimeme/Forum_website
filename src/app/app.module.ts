@@ -20,6 +20,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ViewEntrepComponent } from './modules/entreprise/view-entrep/view-entrep.component';
+import { ViewInviteComponent } from './modules/invite/view-invite/view-invite.component';
+import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponsor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,9 @@ import { ViewEntrepComponent } from './modules/entreprise/view-entrep/view-entre
     AddStandComponent,
     DashboardComponent,
     HomeComponent,
-    ViewEntrepComponent
+    ViewEntrepComponent,
+    ViewInviteComponent,
+    ViewSponsorComponent
         ],
   imports: [
     BrowserModule,

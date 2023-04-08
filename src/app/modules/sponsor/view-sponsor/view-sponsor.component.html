@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Entreprise</title>
+    <title>Home Sponsor</title>
 </head>
 <body>
   <div id="wrapper" >
@@ -32,11 +32,11 @@
             </nav>
     <!--Main Content-->
     <div class="mt-5">
-        <h1 class="text-center">Listes des Entreprises</h1>
+        <h1 class="text-center">Listes des Sponsors de L'Enicarthage</h1>
         <div class="container">
             <!--Add User Button-->
             <div class="my-3">
-                <a href="/add"><button type="button" class="btn btn-primary">Add Entreprise</button></a>
+                <a href="/add-sponsor"><button type="button" class="btn btn-primary">Add Entreprise</button></a>
             </div>
             <table class="table border" >
                 <thead>
@@ -48,23 +48,25 @@
                     <th scope="col">Address</th>
                     <th scope="col">Telephone</th>
                     <th scope="col">Budget</th>
+                    <th scope="col">Type Package</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let entreprise of entreprises" >
-                    <td>{{entreprise.entrep_id}}</td>
-                    <td>{{entreprise.nom}}</td>
-                    <td>{{entreprise.specialite}}</td>
-                    <td>{{entreprise.email}}</td>
-                    <td>{{entreprise.adresse}}</td>
-                    <td>{{entreprise.telephone}}</td>
-                    <td>{{entreprise.budget}}</td>
+                  <tr *ngFor="let sponsor of sponsors" >
+                    <td>{{sponsor.sponsor_id}}</td>
+                    <td>{{sponsor.nom}}</td>
+                    <td>{{sponsor.specialite}}</td>
+                    <td>{{sponsor.email}}</td>
+                    <td>{{sponsor.adresse}}</td>
+                    <td>{{sponsor.telephone}}</td>
+                    <td>{{sponsor.budget}}</td>
+                    <td>{{sponsor.type_package}}</td>
                     <td>
                         <div class="d-inline mx-2">
-                            <button class="btn btn-warning" (click)="updateEntreprise(entreprise.entrep_id)"  type="button">Update</button>
+                            <button class="btn btn-warning" (click)="updateSponsor(sponsor.sponsor_id)"  type="button">Update</button>
                         </div>
                         <div class="d-inline">
-                          <button class="btn btn-danger" (click)="deleteEntreprise(entreprise.entrep_id)" type="button">Delete</button>
+                          <button class="btn btn-danger" (click)="deleteSponsor(sponsor.sponsor_id)" type="button">Delete</button>
                         </div>
                     </td>
                   </tr>

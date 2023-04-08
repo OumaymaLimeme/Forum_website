@@ -11,20 +11,27 @@ import { AddSponsorComponent } from './modules/sponsor/add-sponsor/add-sponsor.c
 import { UpdateSponsorComponent } from './modules/sponsor/update-sponsor/update-sponsor.component';
 import { AddStandComponent } from './modules/stands/add-stand/add-stand.component';
 import { ViewEntrepComponent } from './modules/entreprise/view-entrep/view-entrep.component';
+import { ViewInviteComponent } from './modules/invite/view-invite/view-invite.component';
+import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponsor.component';
 
 const routes: Routes = [
+   {path:'view-entrep',component:ViewEntrepComponent},
+   {path: 'add', component: AddEntrepComponent },
+   {path: 'update/:id', component: UpdateEntrepComponent},
+
+   {path:'view-invite',component:ViewInviteComponent},
+   {path:'update-invite/:id',component:UpdateInviteComponent},
    {path:'add-invite',component:AddInviteComponent},
-   {path:'update-invite',component:UpdateInviteComponent},
+
    {path:'add-sponsor',component:AddSponsorComponent},
-   {path:'update-sponsor',component:UpdateSponsorComponent},
+   {path:'update-sponsor/:id',component:UpdateSponsorComponent},
+    {path:'view-sponsor',component:ViewSponsorComponent},
+
    {path:'add-stand',component:AddStandComponent},
    {path:'login',component:LoginComponent},
    {path:'dashboard', component:DashboardComponent },
    {path :'home',component:HomeComponent},
    {path :'',component:HomeComponent},
-   {path:'view-entrep',component:ViewEntrepComponent},
-  { path: 'add', component: AddEntrepComponent },
-  { path: 'update/:id', component: UpdateEntrepComponent}
 
 ];
 
