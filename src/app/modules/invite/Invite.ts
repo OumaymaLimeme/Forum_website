@@ -3,5 +3,6 @@ export interface Invite {
   prenom:string;
   nom:string;
   email:string;
-  telephone:string
+  telephone:string;
+  sex:string
 }

@@ -46,6 +46,7 @@
                     <th scope="col">Prénom de L'Invité</th>
                     <th scope="col">Email</th>
                     <th scope="col">Telephone</th>
+                    <th scope="col">Sex</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -55,6 +56,7 @@
                     <td>{{invite.nom}}</td>
                     <td>{{invite.email}}</td>
                     <td>{{invite.telephone}}</td>
+                    <td>{{invite.sex}}</td>
                     <td>
                         <div class="d-inline mx-2">
                             <button class="btn btn-warning" (click)="updateInvite(invite.invite_id)"  type="button">Update</button>

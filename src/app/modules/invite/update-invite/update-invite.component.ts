@@ -25,6 +25,7 @@ export class UpdateInviteComponent {
     nom: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required]),
     telephone: new FormControl('', [Validators.required]),
+    sex: new FormControl('', [Validators.required]),
    })
    submit(){
     this.data = this.form.value

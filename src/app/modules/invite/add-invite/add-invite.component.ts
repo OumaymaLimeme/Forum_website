@@ -16,6 +16,7 @@ export class AddInviteComponent {
    nom: new FormControl('', [Validators.required]),
    email: new FormControl('', [Validators.required]),
    telephone: new FormControl('', [Validators.required]),
+   sex: new FormControl('', [Validators.required]),
   })
   ngOnInit(): void {   }
 
