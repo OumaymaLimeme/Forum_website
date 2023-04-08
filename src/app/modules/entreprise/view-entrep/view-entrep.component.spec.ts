@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DelStandComponent } from './del-stand.component';
+import { ViewEntrepComponent } from './view-entrep.component';
 
-describe('DelStandComponent', () => {
-  let component: DelStandComponent;
-  let fixture: ComponentFixture<DelStandComponent>;
+describe('ViewEntrepComponent', () => {
+  let component: ViewEntrepComponent;
+  let fixture: ComponentFixture<ViewEntrepComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DelStandComponent ]
+      declarations: [ ViewEntrepComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DelStandComponent);
+    fixture = TestBed.createComponent(ViewEntrepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

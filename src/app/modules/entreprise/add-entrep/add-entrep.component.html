@@ -7,9 +7,9 @@
       <strong class="card-title">Nouvelle Entreprise</strong>
   </div>
   <div class="card-body">
-      <form class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
+      <form [formGroup]="form" (ngSubmit)="submit()" class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
           <div class="form-group row">
-              <label for="firstname" class="col-md-3 col-form-label">
+              <label for="nom" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Nom Entreprise </font>
                   </font><i class="text-danger">
@@ -19,13 +19,12 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="firstname" type="text" class="form-control" id="firstname"
-                      placeholder="Nom Entreprise" value="">
+                  <input name="nom"  formControlName="nom" type="text" class="form-control"  placeholder="Nom Entreprise" required>
               </div>
           </div>
 
           <div class="form-group row">
-              <label for="lastname" class="col-md-3 col-form-label">
+              <label for="specialite" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Spécialité</font>
                   </font><i class="text-danger">
@@ -35,12 +34,12 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="lastname" type="text" class="form-control" id="lastname"
-                      placeholder="Spécialité" value="">
+                  <input name="specialite" formControlName="specialite" type="text" class="form-control" id="specialite"
+                      placeholder="Spécialité" required>
               </div>
           </div>
 
-          <!-- display in edit mode -->
+          <!-- email -->
           <div class="form-group row">
               <label for="email" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
@@ -52,14 +51,12 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="email" class="form-control" type="email" placeholder="Adresse e-mail"
-                       id="email"
-                      value="">
+                  <input name="email" formControlName="email" class="form-control" type="email" placeholder="Adresse e-mail" required >
               </div>
           </div>
 
           <div class="form-group row">
-              <label for="password" class="col-md-3 col-form-label">
+              <label for="localisation" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Localisation </font>
                   </font><i class="text-danger">
@@ -69,14 +66,14 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <input name="password" class="form-control" type="password"
+                  <input name="localisation" formControlName="localisation" class="form-control" type="text"
 
-                      placeholder="Localisation" id="password">
+                      placeholder="Localisation" id="localisation" required>
               </div>
           </div>
-          <!-- ends of display edit mode-->
+          <!-- Adress-->
           <div class="form-group row">
-              <label for="address" class="col-md-3 col-form-label">
+              <label for="adresse" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Adresse </font>
                   </font><i class="text-danger">
@@ -86,22 +83,20 @@
                   </i>
               </label>
               <div class="col-md-6">
-                  <textarea name="address" class="form-control" placeholder="Adresse"
+                  <textarea name="address" formControlName="adresse" class="form-control" placeholder="Adresse"
 
-                      maxlength="140" rows="1" id="address"></textarea>
+                      maxlength="140" rows="1" id="address" required=""></textarea>
               </div>
           </div>
-
+     <!--telephone-->
           <div class="form-group row">
-              <label for="phone" class="col-md-3 col-form-label">
+              <label for="telephone" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Téléphone</font>
                   </font>
               </label>
               <div class="col-md-6">
-                  <input name="phone" class="form-control" type="number" placeholder="Téléphone"
-                     id="phone"
-                      value="">
+                  <input name="telephone" formControlName="telephone" class="form-control" type="text" placeholder="Téléphone" required  >
               </div>
           </div>
 
@@ -118,36 +113,35 @@
                   <input type="hidden" name="old_picture" value="">
               </div>
           </div>
-
+          <!--budget-->
           <div class="form-group row">
-              <label for="specialist" class="col-md-3 col-form-label">
+              <label for="budget" class="col-md-3 col-form-label">
                   <font style="vertical-align: inherit;">
                       <font style="vertical-align: inherit;">Budget</font>
                   </font>
               </label>
               <div class="col-md-6">
-                  <input type="text" name="specialist" class="form-control" placeholder="Budget"
-
-                      id="specialist" value="">
+                  <input type="number" formControlName="budget" name="budget" class="form-control" placeholder="Budget"
+                      id="budget" required>
               </div>
           </div>
-          <button type="reset" class="button-43">
+          <button type="reset" class="col-md-12 btn btn-secondary">
               <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Réinitialiser</font>
               </font>
           </button>
           &nbsp;
-          <button class="button-40">
-              <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Ajouter</font>
-              </font>
-          </button>
-
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <input [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Submit">
+            </div>
+          </div>
       </form>
 
 
   </div>
 </div>
   </div>
+  <app-footer></app-footer>
 </div>
-<app-footer></app-footer>
+
