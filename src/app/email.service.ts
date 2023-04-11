@@ -8,11 +8,12 @@ import { Email } from './home/email';
 })
 export class EmailService {
 
-  private apiUrl = 'http://localhost:8091/api/send-email';
+  private emailUrl = 'http://localhost:8091/sendMail';
 
   constructor(private http: HttpClient) { }
 
   sendEmail(email: Email): Observable<any> {
-    return this.http.post<any>(this.apiUrl, email);
+    return this.http.post<any>(this.emailUrl, email);
+
   }
 }
