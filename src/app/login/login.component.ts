@@ -23,7 +23,8 @@ export class LoginComponent {
       if(this.getData==true){
             this.router.navigateByUrl('/dashboard');
        }
-      else {alert("Invalide users");}
+      else {
+        alert("Invalide users");}
 
     });
   }
