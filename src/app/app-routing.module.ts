@@ -13,6 +13,9 @@ import { AddStandComponent } from './modules/stands/add-stand/add-stand.componen
 import { ViewEntrepComponent } from './modules/entreprise/view-entrep/view-entrep.component';
 import { ViewInviteComponent } from './modules/invite/view-invite/view-invite.component';
 import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponsor.component';
+import { FormulaireComponent } from './modules/formulaire/formulaire.component';
+import { UpdateStandsComponent } from './modules/stands/update-stands/update-stands.component';
+import { ViewStandsComponent } from './modules/stands/view-stands/view-stands.component';
 
 const routes: Routes = [
    {path:'view-entrep',component:ViewEntrepComponent},
@@ -27,11 +30,17 @@ const routes: Routes = [
    {path:'update-sponsor/:id',component:UpdateSponsorComponent},
     {path:'view-sponsor',component:ViewSponsorComponent},
 
+    {path:'add-stands',component:AddStandComponent},
+    {path:'update-stands/:id',component:UpdateStandsComponent},
+     {path:'view-stands',component:ViewStandsComponent},
+
    {path:'add-stand',component:AddStandComponent},
    {path:'login',component:LoginComponent},
    {path:'dashboard', component:DashboardComponent },
    {path :'home',component:HomeComponent},
    {path :'',component:HomeComponent},
+
+   {path:'formulaire',component:FormulaireComponent},
 
 ];
 

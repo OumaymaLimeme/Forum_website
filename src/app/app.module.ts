@@ -22,6 +22,9 @@ import { FormsModule } from '@angular/forms';
 import { ViewEntrepComponent } from './modules/entreprise/view-entrep/view-entrep.component';
 import { ViewInviteComponent } from './modules/invite/view-invite/view-invite.component';
 import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponsor.component';
+import { FormulaireComponent } from './modules/formulaire/formulaire.component';
+import { ViewStandsComponent } from './modules/stands/view-stands/view-stands.component';
+import { UpdateStandsComponent } from './modules/stands/update-stands/update-stands.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,10 @@ import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponso
     HomeComponent,
     ViewEntrepComponent,
     ViewInviteComponent,
-    ViewSponsorComponent
+    ViewSponsorComponent,
+    FormulaireComponent,
+    ViewStandsComponent,
+    UpdateStandsComponent
         ],
   imports: [
     BrowserModule,
