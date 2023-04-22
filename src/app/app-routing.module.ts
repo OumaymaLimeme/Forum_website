@@ -16,6 +16,9 @@ import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponso
 import { FormulaireComponent } from './modules/formulaire/formulaire.component';
 import { UpdateStandsComponent } from './modules/stands/update-stands/update-stands.component';
 import { ViewStandsComponent } from './modules/stands/view-stands/view-stands.component';
+import { AddBesoinComponent } from './modules/besoins/add-besoin/add-besoin.component';
+import { UpdateBesoinsComponent } from './modules/besoins/update-besoins/update-besoins.component';
+import { ListBesoinsComponent } from './modules/besoins/list-besoins/list-besoins.component';
 
 const routes: Routes = [
    {path:'view-entrep',component:ViewEntrepComponent},
@@ -33,6 +36,10 @@ const routes: Routes = [
     {path:'add-stands',component:AddStandComponent},
     {path:'update-stands/:id',component:UpdateStandsComponent},
      {path:'view-stands',component:ViewStandsComponent},
+
+     {path:'add-besoin',component:AddBesoinComponent},
+     {path:'update-besoins/:id',component:UpdateBesoinsComponent},
+      {path:'list-besoins',component:ListBesoinsComponent},
 
    {path:'add-stand',component:AddStandComponent},
    {path:'login',component:LoginComponent},

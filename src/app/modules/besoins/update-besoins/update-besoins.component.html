@@ -1,0 +1,134 @@
+<div class="row h-100 justify-content-center align-items-center mt-3">
+  <div class="col-auto">
+<div class="card text-center" style="width: 40rem;">
+
+  <div class="card-header">
+
+      <strong class="card-title ">Modifier Vos Besoins </strong>
+  </div>
+  <div class="card-body">
+<form  [formGroup]="form" (ngSubmit)="submit()" class="form-inner" enctype="multipart/form-data" accept-charset="utf-8">
+  <div class="form-group row">
+    <label for="besoin_log" class="col-md-3 col-form-label">
+        <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Besoins Logistiques </font>
+        </font>
+    </label>
+    <div class="col-md-6">
+        <select name="besoin_log" formControlName="besoin_log" class="form-control select2-hidden-accessible" id="type-pack"
+
+            tabindex="-1" aria-hidden="true">
+
+            <option value="restauration">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Restauration</font>
+                </font>
+            </option>
+            <option value="sonorisation">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Sonorisation</font>
+                </font>
+            </option>
+            <option value="Les cadeaux de fin d’année">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Les cadeaux de fin d’année</font>
+                </font>
+            </option>
+            <option value="équipements">
+              <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">équipements</font>
+              </font>
+          </option>
+        </select>
+    </div>
+</div>
+    <div class="form-group row">
+        <label for="facture" class="col-md-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Facture</font>
+            </font><i class="text-danger">
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="facture" formControlName="facture" class="form-control" placeholder="Facture"
+             required="">
+        </div>
+    </div>
+    <div class="form-group row">
+      <label for="besoin_tech" class="col-md-3 col-form-label">
+          <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Acteurs techniques</font>
+          </font>
+      </label>
+      <div class="col-md-6">
+          <select name="besoin_tech" formControlName="besoin_tech" class="form-control select2-hidden-accessible" id="type-pack"
+              tabindex="-1" aria-hidden="true">
+              <option value="Décorateurs">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Décorateurs</font>
+                  </font>
+              </option>
+              <option value="Agents de sécurité">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Agents de sécurité </font>
+                  </font>
+              </option>
+              <option value="Ingénieurs son">
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Ingénieurs son</font>
+                  </font>
+              </option>
+              <option value="Cameramen">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Cameramen</font>
+                </font>
+            </option>
+            <option value="Projectionnistes">
+              <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Projectionnistes</font>
+              </font>
+          </option>
+          </select>
+      </div>
+  </div>
+  <div class="form-group row">
+    <label for="quantite" class="col-md-3 col-form-label">
+        <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Nombre</font>
+        </font><i class="text-danger">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">*</font>
+            </font>
+        </i>
+    </label>
+    <div class="col-md-6">
+        <input name="quantite" formControlName="quantite" class="form-control" type="number" placeholder="nombre" required >
+    </div>
+</div>
+<div class="form-group row">
+    <label for="prix" class="col-md-3 col-form-label">
+        <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Prix Unitaire </font>
+        </font><i class="text-danger">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">*</font>
+            </font>
+        </i>
+    </label>
+    <div class="col-md-6">
+        <input name="address" formControlName="prix" class="form-control" placeholder="prix"
+         required="">
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-12 form-group">
+    <button [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Submit">Button</button>
+  </div>
+</div>
+
+</form>
+  </div>
+</div>
+  </div>
+</div>
+<app-footer></app-footer>

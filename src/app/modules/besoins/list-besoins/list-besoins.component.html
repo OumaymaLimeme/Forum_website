@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besoins de Forum </title>
+</head>
+<body>
+  <div id="wrapper" >
+    <app-navigation></app-navigation>
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <!-- Topbar Search -->
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="Rechercher ..."
+                            aria-label="Search" aria-describedby="basic-addon2"> &nbsp;
+                        <div class="input-group-append">
+                            <button class="button-62" type="button">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <app-header></app-header>
+
+            </nav>
+    <!--Main Content-->
+    <div class="mt-5">
+        <h1 class="text-center">Listes des Besoins techniques et Logistiques pour Forum 2023</h1>
+        <div class="container">
+            <!--Add User Button-->
+            <div class="my-3">
+                <a href="/add-besoin"><button type="button" class="btn btn-primary">Add Entreprise</button></a>
+            </div>
+            <table class="table border" >
+                <thead>
+                  <tr>
+                    <th scope="col">Besoin_Logique</th>
+                    <th scope="col">Total1</th>
+                    <th scope="col">Besoin Technique</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Prix</th>
+                    <th scope="col">Total2</th>
+                    <th scope="col">Budget Totale</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let besoin of besoins" >
+                    <td>{{besoin.besoin_log}}</td>
+                    <td>{{besoin.facture}}</td>
+                    <td>{{besoin.besoin_tech}}</td>
+                    <td>{{besoin.quantite}}</td>
+                    <td>{{besoin.prix}}</td>
+                    <td>{{besoin.prix*besoin.quantite}}</td>
+                    <td>{{besoin.prix*besoin.quantite+besoin.facture}}</td>
+                    <td>
+                        <div class="d-inline mx-2">
+                            <button class="btn btn-warning" (click)="updateBesoin(besoin.besoin_id)"  type="button">Update</button>
+                        </div>
+                        <div class="d-inline">
+                          <button class="btn btn-danger" (click)="deleteBesoin(besoin.besoin_id)" type="button">Delete</button>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+        </div>
+    </div>
+  </div>
+    <app-footer></app-footer>
+</body>
+</html>

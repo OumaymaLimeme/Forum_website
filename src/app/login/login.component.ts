@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserserviceService } from '../userservice.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +12,7 @@ export class LoginComponent {
   password: string ="";
 
   getData ?:boolean;
-  constructor(private userservice: UserserviceService,private router: Router) {}
+  constructor(private userservice:UserService,private router: Router) {}
 
 
   login() {

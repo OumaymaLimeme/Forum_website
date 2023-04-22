@@ -25,6 +25,9 @@ import { ViewSponsorComponent } from './modules/sponsor/view-sponsor/view-sponso
 import { FormulaireComponent } from './modules/formulaire/formulaire.component';
 import { ViewStandsComponent } from './modules/stands/view-stands/view-stands.component';
 import { UpdateStandsComponent } from './modules/stands/update-stands/update-stands.component';
+import { AddBesoinComponent } from './modules/besoins/add-besoin/add-besoin.component';
+import { UpdateBesoinsComponent } from './modules/besoins/update-besoins/update-besoins.component';
+import { ListBesoinsComponent } from './modules/besoins/list-besoins/list-besoins.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +50,10 @@ import { UpdateStandsComponent } from './modules/stands/update-stands/update-sta
     ViewSponsorComponent,
     FormulaireComponent,
     ViewStandsComponent,
-    UpdateStandsComponent
+    UpdateStandsComponent,
+    AddBesoinComponent,
+    UpdateBesoinsComponent,
+    ListBesoinsComponent,
         ],
   imports: [
     BrowserModule,
