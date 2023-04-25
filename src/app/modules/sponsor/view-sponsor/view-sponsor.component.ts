@@ -18,7 +18,7 @@ export class ViewSponsorComponent implements OnInit {
   }
   deleteSponsor(id:number){
     this.service.deleteSponsor(id).subscribe(data=>{
-      this.sponsors = this.sponsors?.filter(sponsor=> sponsor.id !== id);
+      this.sponsors = this.sponsors?.filter(sponsor=> sponsor.sponsor_id!== id);
     })
     setTimeout(()=>{
       window.location.reload();

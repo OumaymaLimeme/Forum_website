@@ -32,7 +32,6 @@ export class UpdateSponsorComponent implements OnInit{
    submit(){
     this.data = this.form.value
     console.log(this.data)
-
     this.service.updateSponsor(this.sponsor?.sponsor_id, this.data).subscribe(data => {
       console.log(data)
     })
