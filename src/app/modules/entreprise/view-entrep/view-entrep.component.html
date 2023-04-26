@@ -36,12 +36,11 @@
         <div class="container">
             <!--Add User Button-->
             <div class="my-3">
-                <a href="/add"><button type="button" class="btn btn-primary">Add Entreprise</button></a>
+                <a href="/add"><button type="button" class="btn btn-primary">Ajouter Entreprise</button></a>
             </div>
             <table class="table border" >
                 <thead>
                   <tr>
-                    <th scope="col">ID</th>
                     <th scope="col">Nom Entreprise</th>
                     <th scope="col">Spécialité</th>
                     <th scope="col">Email</th>
@@ -52,7 +51,6 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let entreprise of entreprises" >
-                    <td>{{entreprise.entrep_id}}</td>
                     <td>{{entreprise.nom}}</td>
                     <td>{{entreprise.specialite}}</td>
                     <td>{{entreprise.email}}</td>
